@@ -91,15 +91,15 @@
 
 2. Combien de requêtes votre page `/presentation` a-t-elle déclenchées ? Lesquelles ?
 
-   > _Ma réponse :_
+   > _Ma réponse :_ Elle a declechée 2 requêtes presentation (le document HTML) et style.css (la feuille de style).
 
 3. Que signifie le code `200` ? Et le code `404` de la favicon ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Code 200 (OK) : Succès. Le serveur a correctement trouvé et renvoyé la ressource demandée et le code 404 pour la favicon signifie que le navigateur a cherché automatiquement l'icône de l'onglet mais comme elle n'existe pas encore  ce dernier a renvoyé une erreur "Introuvable".
 
 4. Pourquoi les modifications faites dans l'onglet Éléments ne sont-elles pas visibles par les autres visiteurs ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Parce que l'onglet Éléments ne modifie que le code HTML/CSS temporaire chargé dans la mémoire vive de mon navigateur. Je ne modifie pas les fichiers réels situés physiquement sur le serveur PythonAnywhere. Les autres visiteurs interrogent toujours le serveur distant et reçoivent le code d'origine intact
 
 ---
 
