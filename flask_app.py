@@ -70,6 +70,17 @@ def home():
 def secret():
     abort(403)
 
+# Inspecter les en-têtes de la requête utilisateur
+@app.get("/moi")
+def moi():
+    return render_template(
+        "moi.html",
+        ip=request.headers.get("X-Real-IP", request.remote_addr),
+        navigateur=request.headers.get("User-Agent"),
+        langues=request.headers.get("Accept-Language"),
+        entetes=request.headers,
+    )
+
 # Une page d'erreur 404 personnalisée
 @app.errorhandler(404)
 def page_introuvable(erreur):
