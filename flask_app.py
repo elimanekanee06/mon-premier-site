@@ -15,10 +15,10 @@ app = Flask(__name__)
 
 # Une "route" associe une adresse (URL) à une fonction Python.
 # Ici : quand quelqu'un visite la page d'accueil "/",
-# Flask exécute la fonction accueil() et renvoie son résultat au navigateur.
+# Flask exécute la fonction accueil() et renvoie le template accueil.html.
 @app.get("/")
 def accueil():
-    return "Bienvenue sur le site de Elimane, Damasi bone deh"
+    return render_template("accueil.html")
 
 
 # ---------------------------------------------------------------
