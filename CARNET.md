@@ -87,11 +87,11 @@
 
 1. Que signifie HTTP ? Qui envoie la **requête** et qui envoie la **réponse** ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ HTTP signifie HyperText Transfer Protocol. C'est le client (mon navigateur) qui envoie la requête HTTP au serveur et c'est le serveur (PythonAnywhere) qui traite la demande et envoie la réponse HTTP.
 
 2. Combien de requêtes votre page `/presentation` a-t-elle déclenchées ? Lesquelles ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_
 
 3. Que signifie le code `200` ? Et le code `404` de la favicon ?
 
