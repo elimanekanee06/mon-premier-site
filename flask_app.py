@@ -28,6 +28,7 @@ def accueil():
 def presentation():
     return """
     <h1>Abdoulaye Elimane Boubacar KANE</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100">
     <p>Je suis étudiant en <strong>deuxieme année d'informatique</strong>.</p>
     <h2>Ce que j'aime</h2>
     <ul>
