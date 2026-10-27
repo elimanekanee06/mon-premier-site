@@ -59,11 +59,11 @@
 
 1. Pourquoi est-ce une bonne idée de séparer le code Python et le HTML ? (Pensez à une équipe avec un développeur et un graphiste.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le développeur s'occupe de la logique métier, des bases de données et des routes en Python, tandis que le graphiste/intégrateur web s'occupe de la mise en page et du style dans les fichiers HTML/CSS sans risquer de casser le code de l'application.
 
 2. Les `{{ prenom }}` sont-ils remplacés par le serveur ou par le navigateur ? Comment l'avez-vous vérifié ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ C'est le serveur qui remplace. Pour verifier j'ai fait ctrl + U et je ne vois nulle part {{prenom}}
 
 ---
 
