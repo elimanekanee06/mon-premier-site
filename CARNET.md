@@ -43,15 +43,15 @@
 
 1. Quelle est la différence entre ce que le serveur **envoie** et ce que le navigateur **affiche** ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le serveur envoie : Du texte brut contenant du code source HTML et le navigateur affiche : Une page Web visuellement mise en forme
 
 2. À quoi servent les balises `<h1>`, `<p>`, `<ul>` et `<li>` ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ <h1> : Définit un titre principal de niveau 1,<p> : Définit un paragraphe de texte structuré,<ul> : Crée une liste non ordonnée,<li> : Définit un élément de liste
 
 3. Pourquoi l'image s'affiche-t-elle alors qu'elle n'est pas sur votre serveur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ L'image s'affiche car l'attribut src de la balise <img> contient une URL absolue
 
 ---
 
