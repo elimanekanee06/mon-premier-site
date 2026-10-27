@@ -32,20 +32,31 @@ def presentation():
 def loisirs():
     return "J'adore conduire et jouer au paddle."
 
-# Partie A — Route dynamique avec paramètre d'URL
+# Route dynamique avec paramètre d'URL
 @app.get("/bonjour/<prenom>")
 def bonjour(prenom):
     return f"<h1>Bonjour {prenom} !</h1>"
 
-# Partie B — Route avec paramètres dans la Query String (?a=...&b=...)
+# Route avec calcul de paramètres (?a=...&b=...)
 @app.get("/calcul")
 def calcul():
     a = int(request.args.get("a", 0))
     b = int(request.args.get("b", 0))
     return f"{a} + {b} = {a + b}"
 
+# Routes pour le formulaire
+@app.get("/formulaire")
+def formulaire():
+    return render_template("formulaire.html")
+
+@app.get("/salut")
+def salut():
+    prenom = request.args.get("prenom", "inconnu")
+    ville = request.args.get("ville", "nulle part")
+    return f"Bonjour {prenom}, qui vient de {ville} !"
+
 # ---------------------------------------------------------------
-#  Ne pas modifier : utile seulement pour lancer le site
+#  Ne pas modifier : utile seulement pour lancer me site
 #  sur votre propre ordinateur (python flask_app.py)
 # ---------------------------------------------------------------
 if __name__ == "__main__":
